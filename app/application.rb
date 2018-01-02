@@ -29,7 +29,6 @@ class Application
       else
         error
       end
-        
     else
       resp.write "Path Not Found"
     end
