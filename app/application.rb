@@ -23,8 +23,8 @@ class Application
         end
       end
     elsif req.path.match(/add/)
-      item = req.params["q"]
-      if @@items.include?(item)
+      search_item = req.params["item"]
+      if @@items.include?(search_item)
         @@cart << item
       else
         error
