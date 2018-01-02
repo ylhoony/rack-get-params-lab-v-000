@@ -28,7 +28,7 @@ class Application
       binding.pry
       search_item = req.params["item"]
       if @@items.include?(search_item)
-        @@cart << item
+        @@cart << search_item
       else
         error
       end
