@@ -31,7 +31,7 @@ class Application
         @@cart << search_item
         resp.write "added #{search_item}"
       else
-        error
+        resp.write "#{search_item}"
       end
     else
       resp.write "Path Not Found"
